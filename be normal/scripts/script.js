@@ -45,7 +45,7 @@ function hash(p) {
 // @ts-ignore
 function glitchSignal(time_p) {
 
-    var glitch_value_st = 8.0;
+    var glitch_value_st = 5.0;
 
 
     // Diagnostics.watch("time_p", time_p);
@@ -55,7 +55,7 @@ function glitchSignal(time_p) {
     var st_x = R.add(texcoords.x, 0.0);
     
     // @ts-ignore
-    var t = R.mul(time_p, 5.0);
+    var t = R.mul(time_p, 5000.0);
     
     var up = hash(R.pack2(t, t));
     // @ts-ignore
